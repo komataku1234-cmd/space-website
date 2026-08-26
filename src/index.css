@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-900: #0b0d17;
+  --color-blue-300: #d0d6f9;
+  --breakpoint-lg: 90rem;
+}
+
+.home-hero {
+  background-image: url("/src/assets/home/background-home-mobile.jpg");
+  background-color: var(--color-blue-900);
+}
+
+@media (min-width: 768px) {
+  .home-hero {
+    background-image: url("/src/assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-hero {
+    background-image: url("/src/assets/home/background-home-desktop.jpg");
+  }
+}
+
+.destination-hero {
+  background-image: url("/src/assets/destination/background-destination-mobile.jpg");
+  background-color: var(--color-blue-900);
+}
+
+@media (min-width: 768px) {
+  .destination-hero {
+    background-image: url("/src/assets/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media (min-width: 1440px) {
+  .destination-hero {
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+  }
+}
