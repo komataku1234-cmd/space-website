@@ -13,8 +13,8 @@ export default function Crew(){
 
     return(
         <div className="crew-hero min-h-dvh bg-cover bg-center bg-no-repeat px-6 pt-28 lg:pt-40 text-center lg:text-left">
-            <p className="text-white mb-15 lg:mb-50 *:md:text-left lg:text-[20px] lg:ml-30"><span aria-hidden="true" className="opacity-25">02</span>MEET YOUR CREW</p>
-            <div className="md:text-center lg:text-left lg:ml-30 flex flex-row gap-20">
+            <p className="text-white mb-15 lg:mb-50 md:text-left lg:text-[20px] lg:ml-30"><span aria-hidden="true" className="opacity-25">02</span>MEET YOUR CREW</p>
+            <div className="md:text-center lg:text-left lg:ml-30 flex flex-col lg:flex-row gap-20">
                 <div>
                     <div className="text-white/50 text-[25px] md:text-[30px]">{data.crew.find((d: any) => d.name === crew)?.role}</div>
                     <h1 className="text-white text-[30px] mb-8 md:text-[60px]">{crew}</h1>
