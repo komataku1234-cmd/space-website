@@ -39,3 +39,20 @@
     background-image: url("/src/assets/destination/background-destination-desktop.jpg");
   }
 }
+
+.crew-hero {
+  background-image: url("/src/assets/crew/background-crew-mobile.jpg");
+  background-color: var(--color-blue-900);
+}
+
+@media (min-width: 768px) {
+  .crew-hero {
+    background-image: url("/src/assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media (min-width: 1440px) {
+  .crew-hero {
+    background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+  }
+}
