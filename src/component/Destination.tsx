@@ -6,6 +6,7 @@ export default function Destination() {
 const [destinations, setDestinations] = useState("Moon");
 const imageSrc = images[`../assets/destination/image-${destinations.toLowerCase()}.png`]
 
+
 const handleDestinationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDestinations(e.target.value);
 };
