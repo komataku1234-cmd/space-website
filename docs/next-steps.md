@@ -8,18 +8,19 @@
 - Technology: 骨組み・画像の切り替え・丸ボタンまで。デスクトップのレイアウトが未完成
 - 未コミットの変更: `index.html`(Bellefair の link)、`src/App.tsx`(technology ルート)、`src/index.css`(technology-hero / font-serif)、`src/component/Technology.tsx`、`src/component/Destination.tsx`(空行のみ)
 
-## 1. Technology (最優先)
+## 1. Technology
 
-- [ ] 外側の flex(20行目)が `flex lg:flex-row` のままで、モバイルも横並びになっている → `flex flex-col lg:flex-row`
-- [ ] デスクトップで画像が右端に寄らず、テキストと重なっている → 画像に `lg:ml-auto lg:shrink-0` と幅・高さ(Figma の値)、親に `lg:items-center lg:gap-*`
-- [ ] テキストブロックが中央揃えのまま → `lg:items-start lg:text-left`
-- [ ] 画像の `-mx-6` はモバイル/タブレットの画面端いっぱい用。デスクトップで右端に届く挙動が Figma と合っているか確認
-- [ ] タブレット・モバイルの Figma 数値(画像の高さ、文字サイズ、余白)を反映
+- [x] 外側の flex を `flex-col lg:flex-row` に
+- [x] デスクトップで画像を右端に(`lg:ml-auto lg:shrink-0`、`lg:w-[515px] lg:h-[527px]` は仮の値のまま)
+- [x] テキストブロックを `lg:items-start lg:text-left` に
+- [x] 丸ボタンのサイズをモバイル/タブレット/デスクトップで変更(`*:` でまとめて指定)
+- [ ] 画像の `lg:w-[515px] lg:h-[527px]`、Page Titleの `lg:ml-35` はFigmaの実測値ではなく目分量。実際の数値を確認して直す
+- [ ] タブレット・モバイルのFigma数値(画像の高さ、文字サイズ、余白)をまだ反映していない
 - [ ] 不要な外側の `<div>`(17行目)とコメントアウトの行(11行目)を削除
 
 ## 2. 全ページ共通の見た目
 
-- [ ] フォント: Bellefair は読み込み済みだが、`font-serif` が Home の "SPACE" / EXPLORE、Destination の天体名、Crew の名前・役職にまだ付いていない
+- [x] ~~`font-serif` をHome/Destination/Crewの見出しにも付ける~~ → やめて、Technologyの見出しから `font-serif` を外す方針に変更済み(9/29)。Bellefairを使うかどうか自体、方針が固まっていない
 - [ ] Barlow(本文)と Barlow Condensed(ナビ・ラベル)が未読み込み → `index.html` に追加して `@theme` に `--font-sans` / `--font-condensed` を登録
 - [ ] Nav: "00 HOME" のように番号を付ける(モバイルのオーバーレイ、デスクトップの両方)、文字サイズ、letter-spacing
 - [ ] Nav のモバイルメニュー4箇所にある `hover:border-r-2${isActive ...}` のスペース抜けを修正

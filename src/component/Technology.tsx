@@ -16,7 +16,7 @@ export default function Technology(){
     return(
         <div>
             <div className="technology-hero min-h-dvh bg-cover bg-center bg-no-repeat px-6 pt-28 lg:pt-40">
-                <div className="text-white text-center md:text-left md:ml-10 lg:ml-35 text-[20px] mb-20 lg:mb-0"><span aria-hidden="true" className="opacity-25 pr-4">03</span>SPACE LAUNCH 101</div>
+                <div className="text-white text-center md:text-left md:ml-10 lg:ml-35 text-[20px] mb-20 lg:mb-0"><span aria-hidden="true" className="opacity-25">03　</span>SPACE LAUNCH 101</div>
                 <div className="mb-20 flex flex-col lg:flex-row lg:items-center lg:gap-16 lg:ml-35">
                     <picture className="block -mx-6 mb-10 lg:order-3 lg:ml-auto lg:mb-0 lg:shrink-0">
                         <source media="(min-width: 768px) and (max-width: 1439px)" srcSet={landscapeSrc} />
