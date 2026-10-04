@@ -6,6 +6,7 @@ export default function Destination() {
 const [destinations, setDestinations] = useState("Moon");
 const imageSrc = images[`../assets/destination/image-${destinations.toLowerCase()}.png`]
 
+
 const handleDestinationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDestinations(e.target.value);
 };
@@ -13,7 +14,7 @@ const handleDestinationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     return(
         <div className="destination-hero min-h-dvh bg-cover bg-center bg-no-repeat px-6 pt-28 lg:pt-40">
                 <p className="text-white text-center md:text-left md:ml-30 text-[20px] mb-10 lg:mb-0">
-                    <span aria-hidden="true" className="opacity-25">01</span> PICK YOUR DESTINATION
+                    <span aria-hidden="true" className="opacity-25">01　</span> PICK YOUR DESTINATION
                 </p>
             <div className="text-center lg:text-left lg:ml-60 flex flex-col items-center lg:items-start lg:flex-row gap-10 lg:gap-15 lg:pt-40">
                 <img src={imageSrc} alt={destinations} className="aspect-square rounded-full w-[150px] md:w-[200px] lg:w-[350px]" />
