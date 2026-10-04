@@ -65,7 +65,4 @@ claude codeを主に使っている。サイトはTailwind CSSの公式サイト
 このプロジェクトでは、Claude Code を使用しました。
 今回はAIにコードを書かせる行為を禁止されているため、相談やわからないことをAIには聞いているが実際にコードを書き、調整も自分で行っているため時間がかなりかかった。コードを理解できるのであれば、AIでコーディングしてもらうのは全然ありだと思った。自分の意見をAIに伝えるための言語力は必要だと実感した。
 
-## Author
-
-- Frontend Mentor - [@ここにユーザー名を追加](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [komataku1234-cmd](https://github.com/komataku1234-cmd)
+(https://github.com/komataku1234-cmd)
