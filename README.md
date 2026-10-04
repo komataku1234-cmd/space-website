@@ -33,7 +33,6 @@
 ### Links
 
 - ソリューション URL: [GitHub](https://github.com/komataku1234-cmd/space-website)
-- ライブサイト URL: [ここにライブサイトURLを追加](https://your-live-site-url.com)
 
 ## My process
 
